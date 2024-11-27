@@ -7,14 +7,14 @@ const Header = () => {
     }
 
     return(
-        <div className="bg-blue-950 py-6 lg:py-8 flex justify-evenly items-center">
+        <div className="bg-blue-950 py-6 lg:py-8 flex justify-around items-center">
 
-            <div className="lg:ml-[8%] xl:ml-[10%] flex justify-start">
-                <img src="//static.gst.gov.in/uiassets/images/Emblem_of_India-white.svg" alt="" className="w-[30px] lg:w-[40px]"/>
+            <div className="lg:ml-[8%] xl:ml-[10%] flex items-center">
+                <img src="Aasraa-logo.jpg" alt="aasraa-logo" className="w-[120px]"/>
                 
                 <div className="w-[220px] lg:w-[400px] text-white flex flex-col items-start justify-center pl-4">
-                    <h1 className="font-bold text-1xl lg:text-3xl">Goods and Services Tax</h1>
-                    <p className="text-[8px] lg:text-[14px]">Government of India, States and Union Territories</p>
+                    <h1 className="font-bold text-1xl lg:text-3xl">GST Practice Set</h1>
+                    <p className="text-[8px] lg:text-[14px]">Aasraa Skillability Center</p>
                 </div>
 
             </div>
