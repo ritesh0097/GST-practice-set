@@ -2,9 +2,9 @@
 
 const Footer = () => {
     return(
-        <div className="steal-blue2 text-white text-1xl py-8 flex flex-col justify-around items-center">
+        <div className="steal-blue2 text-white text-[6px] sm:text-[8px] lg:text-[10px] xl:text-[12px] py-8 flex flex-col justify-around items-center">
 
-            <div className="w-[60%] mb-12 text-[14px] text-left flex justify-between leading-10">
+            <div className="w-[98%] sm:w-[94%] lg:w-[80%] 2xl:w-[70%] mb-12 text-left flex justify-between leading-4 xl:leading-6">
                 <div>
                     <h1 className="text-sky-500 font-bold hover:underline cursor-pointer">About GST</h1>
                     <ul>
@@ -26,7 +26,7 @@ const Footer = () => {
                 <div>
                     <h1 className="text-sky-500 font-bold hover:underline cursor-pointer">Related Sites</h1>
                     <ul>
-                        <li className="hover:underline cursor-pointer leading-6 mt-2"> Central Board of Indirect <br/> Taxes and Customs </li>
+                        <li className="hover:underline cursor-pointer"> Central Board of Indirect <br/> Taxes and Customs </li>
                         <li className="hover:underline cursor-pointer"> State Tax Website </li>
                         <li className="hover:underline cursor-pointer"> National Portal </li>
                     </ul>
@@ -52,16 +52,16 @@ const Footer = () => {
                         <li className="hover:underline cursor-pointer"> Log/Track Your Issue: <br/> Grievance Redressal Portal for GST </li>
                     </ul>
 
-                    <ul className="text-2xl flex">
-                        <li className="m-2 hover:underline cursor-pointer"><ion-icon name="logo-facebook"></ion-icon></li>
-                        <li className="m-2 hover:underline cursor-pointer"><ion-icon name="logo-youtube"></ion-icon></li>
-                        <li className="m-2 hover:underline cursor-pointer"><ion-icon name="logo-twitter"></ion-icon></li>
-                        <li className="m-2 hover:underline cursor-pointer"><ion-icon name="logo-linkedin"></ion-icon></li>
+                    <ul className="w-[60px] 2xl:w-[100px] text-[10px] 2xl:text-[18px] flex justify-between">
+                        <li className="cursor-pointer"><ion-icon name="logo-facebook"></ion-icon></li>
+                        <li className="cursor-pointer"><ion-icon name="logo-youtube"></ion-icon></li>
+                        <li className="cursor-pointer"><ion-icon name="logo-twitter"></ion-icon></li>
+                        <li className="cursor-pointer"><ion-icon name="logo-linkedin"></ion-icon></li>
                     </ul>
                 </div>
             </div>
             <hr className="bg-white w-full border-none h-[1px]" />
-            <div className="w-[60%] text-[14px] my-4 flex justify-between">
+            <div className="w-[100%] xl:w-[80%] 2xl:w-[60%] my-4 flex justify-around">
                 <p>&copy; 2024-25 Goods and Services Tax Network</p>
                 <p>Site Last Updated on 24-10-2024</p>
                 <p>Designed & Developed by GSTN</p>

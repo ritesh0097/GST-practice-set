@@ -14,10 +14,10 @@ const Login = () => {
             <Header/>
             <Nav/>
 
-            <div className="bg-white w-[60%] m-auto my-1 flex flex-col items-start">
+            <div className="bg-white w-[96%] sm:w-[80%] md:w-[70%] lg:w-[60%] xl:w-[55%] 2xl:w-[50%] m-auto my-1 flex flex-col items-start">
             <p className="bg-slate-100 w-full p-2 text-left"> <span className="text-blue-600">Home</span> <ion-icon name="chevron-forward-outline"></ion-icon> Login</p>
 
-            <form className="w-[60%] m-auto mb-[5%] py-4 flex flex-col text-left justify-start">
+            <form className="w-[90%] m-auto mb-[5%] py-4 flex flex-col text-left justify-start">
 
                 <h1 className="text-xl font-bold my-2 py-1"> Login </h1>
                 <hr/>

@@ -15,8 +15,6 @@ function App() {
           <Route path='/login' element={<Login/>}/>
           <Route path='/register/new-registration' element={<Register/>}/>
           <Route path='/register/temporary-reference-number' element={<Register2/>}/>
-
-
         </Routes>    
       </BrowserRouter>
 

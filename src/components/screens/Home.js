@@ -8,10 +8,10 @@ const Home = () => {
             <Header/>
             <Nav/>
 
-            <div className="w-[70%] m-auto my-8 mb-12 text-left">
-                <h1 className="text-2xl font-bold mt-4"> What is GST ? </h1>
+            <div className="w-[90%] sm:w-[80%] md:w-[70%] text-[12px] md:text-[16px] m-auto my-8 mb-12 text-left">
+                <h1 className="font-bold mt-4"> What is GST ? </h1>
 
-                <p className="p-4">                    
+                <p className="p-4">
                     GST (Goods and Services Tax) is a comprehensive indirect tax system implemented in many countries, including India, to simplify and unify the taxation structure. It replaces multiple indirect taxes that were previously levied by both the central and state governments, such as service tax, VAT (Value Added Tax), excise duty, and more. GST is aimed at creating a single, integrated market by ensuring that goods and services are taxed uniformly across the country.
                 </p>
 
