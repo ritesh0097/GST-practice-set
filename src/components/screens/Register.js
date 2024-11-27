@@ -52,15 +52,43 @@ const Register = () => {
                 <label htmlFor="businessName" className="py-1 mt-2">State / UT <span className="text-red-600">*</span></label>
                 <select className="my-1 p-2 border border-black">
                     <option>Select</option>
-                    <option>Taxpayer</option>
-                    <option>Tax Deductor</option>
-                    <option>Tax Collector (e-commerce)</option>
-                    <option>GST Practitioner</option>
-                    <option>Non Resident Taxable Person</option>
-                    <option>United Nation Body</option>
-                    <option>Consulate or Embassy of Foreign Country</option>
-                    <option>Other Notified Person</option>
-                    <option>Non-Resident Online Services Provider and/or Non-Resident Online Money Gaming Supplier</option>
+                    <option>Andaman and Nicobar Islands</option>
+                    <option>Andhra Pradesh</option>
+                    <option>Arunachal Pradesh</option>
+                    <option>Assam</option>
+                    <option>Bihar</option>
+                    <option>Chandigarh</option>
+                    <option>Chhattisgarh</option>
+                    <option>Dadra and Nagar Haveli and Daman and Diu</option>
+                    <option>Delhi</option>
+                    <option>Goa</option>
+                    <option>Gujarat</option>
+                    <option>Haryana</option>
+                    <option>Himachal Pradesh</option>
+                    <option>Jammu and Kashmir</option>
+                    <option>Jharkhand</option>
+                    <option>Karnataka</option>
+                    <option>Kerala</option>
+                    <option>Ladakh</option>
+                    <option>Lakshadweep</option>
+                    <option>Madhya Pradesh</option>
+                    <option>Maharashtra</option>
+                    <option>Manipur</option>
+                    <option>Meghalaya</option>
+                    <option>Mizoram</option>
+                    <option>Nagaland</option>
+                    <option>Odisha</option>
+                    <option>Other Teritory</option>
+                    <option>Puducherry</option>
+                    <option>Punjab</option>
+                    <option>Rajasthan</option>
+                    <option>Sikkim</option>
+                    <option>Tamil Nadu</option>
+                    <option>Telengana</option>
+                    <option>Tripura</option>
+                    <option>Uttar Pradesh</option>
+                    <option>Uttarakhand</option>
+                    <option>West Bengal</option>                    
                 </select>
                 
                 <label htmlFor="businessName" className="py-1 mt-2">District </label>
@@ -89,7 +117,6 @@ const Register = () => {
             </div> 
             
             <Footer/>
-
             
         </div>
     )
