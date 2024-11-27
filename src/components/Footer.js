@@ -50,15 +50,15 @@ const Footer = () => {
                     </ul>
                 </div>
             </div>
-            {/* <hr className="bg-white w-full border-none h-[1px]" /> */}
+
             <div className="flex justify-center">
-                <img src="Aasraa-banner.png" alt="aasraa banner" className="w-[100%] xl:w-[80%] 2xl:w-[60%] my-4"/>
+                <img src="Aasraa-banner.png" alt="aasraa-banner" className="w-[100%] xl:w-[80%] 2xl:w-[60%] my-4"/>
             </div>
             <hr className="bg-white w-full border-none h-[1px]" />
             <div className="w-[100%] xl:w-[80%] 2xl:w-[60%] my-4 flex justify-around">
                 <p>Design and Developed by Ritesh Kumar</p>
-                <a href="https://ritesh-portfolio.netlify.app" target="_blank" rel="noreferrer">Ritesh Kumar Portfolio</a>
-                <a href="https://github.com/ritesh0097" target="_blank" rel="noreferrer">Github: https://github.com/ritesh0097</a>
+                <a href="https://ritesh-portfolio.netlify.app" target="_blank" rel="noreferrer" className="underline">Ritesh Kumar Portfolio</a>
+                <a href="https://github.com/ritesh0097" target="_blank" rel="noreferrer">Github: <span className="underline"> https://github.com/ritesh0097 </span></a>
             </div>
             
         </div>

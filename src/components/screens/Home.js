@@ -1,12 +1,10 @@
 import Header from "../Header";
-import Nav from "../Nav";
 import Footer from "../Footer";
 
 const Home = () => {
     return(
         <div>
-            <Header/>
-            <Nav/>
+            <Header/>            
 
             <div className="w-[90%] sm:w-[80%] md:w-[70%] text-[12px] md:text-[16px] m-auto my-8 mb-12 text-left">
                 <h1 className="font-bold mt-4"> What is GST ? </h1>

@@ -1,13 +1,12 @@
 import { NavLink } from "react-router-dom";
-import Footer from "../Footer";
 import Header from "../Header";
-import Nav from "../Nav";
+import Footer from "../Footer";
+
 
 const Register2 = () => {
     return(
         <div>
-            <Header/>
-            <Nav/>
+            <Header/>            
 
             <div className="bg-white w-[98%] sm:w-[80%] md:w-[70%] lg:w-[60%] xl:w-[55%] 2xl:w-[50%] m-auto my-1 flex flex-col items-start">
             <p className="bg-slate-100 w-full p-2 text-left"> <span className="text-blue-600">Home</span> <ion-icon name="chevron-forward-outline"></ion-icon> Registration</p>

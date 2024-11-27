@@ -1,10 +1,8 @@
 import { NavLink } from "react-router-dom";
 import Header from "../Header";
-import Nav from "../Nav";
 import Footer from "../Footer";
 
 const Login = () => {
-
     function submit(e) {
         e.preventDefault();
     }
@@ -12,7 +10,6 @@ const Login = () => {
     return(
         <div className="">
             <Header/>
-            <Nav/>
 
             <div className="bg-white w-[96%] sm:w-[80%] md:w-[70%] lg:w-[60%] xl:w-[55%] 2xl:w-[50%] m-auto my-1 flex flex-col items-start">
             <p className="bg-slate-100 w-full p-2 text-left"> <span className="text-blue-600">Home</span> <ion-icon name="chevron-forward-outline"></ion-icon> Login</p>
