@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Header from "../Header";
 import Footer from "../Footer";
 
@@ -31,8 +31,8 @@ const Register = () => {
                 <span className="text-right my-2 py-1"><span className="text-red-600">*</span> indicates mandatory fields</span>
                 
                 <ul className="flex flex-col lg:flex-row mb-4">
-                    <label className="cursor-pointer"><NavLink to={"/register/new-registration"}><input type="radio" name={"registation-type"} className="m-2" checked/> New Registration</NavLink></label>
-                    <label className="cursor-pointer"><NavLink to={"/register/temporary-reference-number"}><input type="radio" name={"registation-type"} className="m-2 lg:ml-4" /> Temporary Reference Number (TRN)</NavLink></label>
+                    <label className="cursor-pointer"><Link to={"/register/new-registration"}><input type="radio" name={"registation-type"} className="m-2" checked/> New Registration</Link></label>
+                    <label className="cursor-pointer"><Link to={"/register/temporary-reference-number"}><input type="radio" name={"registation-type"} className="m-2 lg:ml-4" /> Temporary Reference Number (TRN)</Link></label>
                 </ul>
 
                 <label htmlFor="businessName" className="py-1 mt-2">I am a <span className="text-red-600">*</span></label>

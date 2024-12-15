@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Header from "../Header";
 import Footer from "../Footer";
 
@@ -31,8 +31,8 @@ const Register2 = () => {
                 <span className="text-right my-2 py-1"><span className="text-red-600">*</span> indicates mandatory fields</span>
                 
                 <ul className="flex flex-col lg:flex-row mb-4">
-                    <label className="cursor-pointer"><NavLink to={"/register/new-registration"}><input type="radio" name={"registation-type"} className="m-2" /> New Registration</NavLink></label>
-                    <label className="cursor-pointer"><NavLink to={"/register/temporary-reference-number"}><input type="radio" name={"registation-type"} className="m-2 lg:ml-4" checked/> Temporary Reference Number (TRN)</NavLink></label>
+                    <label className="cursor-pointer"><Link to={"/register/new-registration"}><input type="radio" name={"registation-type"} className="m-2" /> New Registration</Link></label>
+                    <label className="cursor-pointer"><Link to={"/register/temporary-reference-number"}><input type="radio" name={"registation-type"} className="m-2 lg:ml-4" checked/> Temporary Reference Number (TRN)</Link></label>
                 </ul>
 
                 <label htmlFor="panNumber" className="py-1 mt-2">Temporary Reference Number (TRN) <span className="text-red-600">*</span></label>
