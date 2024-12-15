@@ -13,9 +13,9 @@ const Main = () => {
                 <div className="bg-yellow-200 text-red-600 text-[14px] font-bold flex items-center p-1">
                     <div className="absolute left-2"><ion-icon name="notifications"></ion-icon></div>
                     
-                    <marquee>
+                    <div>
                         We shall be enhancing services on the GST portal on 15th Dec'24 12:00 AM onwards. GST Portal services will not be available until 15th Dec'24 06:30 AM. The inconvenience caused is regretted.
-                    </marquee>
+                    </div>
                 </div>
             </nav>
 
