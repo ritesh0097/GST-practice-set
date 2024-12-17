@@ -18,7 +18,7 @@ const Main = () => {
                     </div>
                 </div>
             </nav>
-
+        
             <main className="my-8">
                 <div className="w-[100%] md:w-[90%] lg:w-[80%] xl:w-[60%] m-auto">
                     <div className="flex flex-wrap justify-between mb-8">
@@ -96,7 +96,8 @@ const Main = () => {
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> 
+                    
 
                     <div className="flex flex-wrap justify-between">
                         <div className="w-[94%] lg:w-[55%] m-auto mt-4">
@@ -105,7 +106,8 @@ const Main = () => {
                                 <span>DOWNLOAD PDF <ion-icon name="open"></ion-icon></span>
                             </div>
 
-                            <table border="1" className="text-left">
+                            <table className="text-left">
+                                <tbody>                                                                    
                                 <tr className="text-center font-bold">
                                     <td className="border border-black">Monthly</td>
                                     <td className="border border-black">Quarterly</td>
@@ -168,6 +170,7 @@ const Main = () => {
                                         <p className="text-[13px] font-bold">2 years from the last day of the quarter in which supply was received</p>
                                     </td>
                                 </tr>
+                                </tbody>
                             </table>
                         </div>
 
@@ -196,8 +199,7 @@ const Main = () => {
                         </div>
                     </div>
                 </div>
-            </main>
-        
+            </main>        
         </div>
 
         <Footer/>

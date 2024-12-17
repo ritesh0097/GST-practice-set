@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Footer = () => {
     return(
@@ -10,6 +10,7 @@ const Footer = () => {
                     <ul>
                         <li className="hover:underline cursor-pointer"> GST Council Structure </li>
                         <li className="hover:underline cursor-pointer"> GST History </li>
+                        <Link to={"/gst"} className="hover:underline cursor-pointer"> What is GST? </Link>
                     </ul>
                 </div>
 

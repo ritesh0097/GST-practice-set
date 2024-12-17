@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import Header from "../Header";
 import Footer from "../Footer";
 
@@ -34,7 +34,7 @@ const Login = () => {
                 </div>
 
                 <p className="my-4 mb-[8%]">
-                    <b><ion-icon name="alert-circle" class="text-[18px]"></ion-icon> First time Login:</b> If you are loggin in for the first time, click <NavLink to={"/login"} className={"text-sky-800 underline"}>here</NavLink> to log in.
+                    <b><ion-icon name="alert-circle" class="text-[18px]"></ion-icon> First time Login:</b> If you are loggin in for the first time, click <Link to={"/register/new-registration"} className={"text-sky-800 underline"}>here</Link> to log in.
                 </p>
             </form>
 

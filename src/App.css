@@ -10,19 +10,20 @@
   background-color: rgb(36, 61, 106);
 }
 
-.nav-active {
-  background-color: rgb(6, 182, 212);
-  color: rgb(30, 41, 59);
-}
-.nav-active:hover {  
-  color: rgb(30, 41, 59);
-}
-
 .active {
   background-color: rgb(6, 182, 212);
   color: rgb(30, 41, 59);
 }
 .active:hover {  
+  color: rgb(30, 41, 59);
+}
+
+.nav-list-2 {
+  background-color: rgb(241 245 249);
+  color: rgb(30, 41, 59);
+}
+
+.nav-list-2:hover {  
   color: rgb(30, 41, 59);
 }
 
