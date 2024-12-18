@@ -9,6 +9,7 @@ export const list = [
         subLists: [
             {
                 name: "Registration",
+                link: "/register/new-registration",
                 
                 childList: [
                     {

@@ -1,6 +1,5 @@
 import { NavLink } from "react-router-dom";
-import Nav from "./Nav";
-import Navs from "./Navl";
+import Navs from "./Navs";
 import SideNav from "./SideNav";
 import BlankDiv from "./BlankDiv";
 
@@ -12,7 +11,6 @@ const Header = () => {
         document.getElementById("menu").classList.toggle("hidden")
         document.getElementById("close").classList.toggle("hidden")
     }
-
 
     return(
         <>
@@ -39,8 +37,7 @@ const Header = () => {
                 </div>
         
             </div>
-        
-            <Nav/>
+                                
             <Navs/>
             <SideNav/>
             <BlankDiv/>
