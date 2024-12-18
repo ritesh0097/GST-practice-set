@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
 import Nav from "./Nav";
+import Navs from "./Navl";
 import SideNav from "./SideNav";
 import BlankDiv from "./BlankDiv";
 
@@ -40,6 +41,7 @@ const Header = () => {
             </div>
         
             <Nav/>
+            <Navs/>
             <SideNav/>
             <BlankDiv/>
         </>

@@ -18,12 +18,7 @@
   color: rgb(30, 41, 59);
 }
 
-.nav-list-2 {
-  background-color: rgb(241 245 249);
-  color: rgb(30, 41, 59);
-}
-
-.nav-list-2:hover {  
-  color: rgb(30, 41, 59);
+.hide {
+  display: none;
 }
 
