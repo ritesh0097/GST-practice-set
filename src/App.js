@@ -1,10 +1,10 @@
 import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Home from './components/screens/Home';
+import Qna from './components/screens/Qna';
 import Login from './components/screens/Login';
 import Register from './components/screens/TRN screens/Register';
 import Register2 from './components/screens/Registration screens/Register2';
-import Main from './components/screens/Main';
+import Home from './components/screens/Home';
 import Otp from './components/screens/TRN screens/Otp';
 import MsgPage from './components/screens/TRN screens/MsgPage';
 import Otp2 from './components/screens/Registration screens/Otp2';
@@ -17,8 +17,8 @@ function App() {
     <div className="bg-slate-100 App">          
       <BrowserRouter>
         <Routes>
-          <Route path='/' element={<Main/>}/>
-          <Route path='/gst' element={<Home/>}/>
+          <Route path='/' element={<Home/>}/>
+          <Route path='/gst' element={<Qna/>}/>
           <Route path='/services' element={<Login/>}/>
           <Route path='/login' element={<Login/>}/>
           <Route path='/register/new-registration' element={<Register/>}/>

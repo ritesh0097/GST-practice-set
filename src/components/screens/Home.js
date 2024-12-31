@@ -1,124 +1,212 @@
-import Header from "../Header";
+import { NavLink } from "react-router-dom";
 import Footer from "../Footer";
+import Header from "../Header";
 
 const Home = () => {
     return(
+    <div className="">
+        <Header/>
+
         <div>
-            <Header/>     
+            <nav>
+                <img src="banner_image_large.jpg" alt="" className="h-[100px] sm:h-auto"/>
+                <div className="bg-yellow-200 text-red-600 text-[14px] font-bold flex items-center p-1">
+                    <div className="absolute left-2"><ion-icon name="notifications"></ion-icon></div>
+                    
+                    <div className="marquee-container">
+                        <div className="marquee-text">
+                            We shall be enhancing services on the GST portal on 15th Dec'24 12:00 AM onwards. GST Portal services will not be available until 15th Dec'24 06:30 AM. The inconvenience caused is regretted.
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        
+            <main className="my-8">
+                <div className="w-[100%] md:w-[90%] lg:w-[80%] xl:w-[60%] m-auto">
+                    <div className="flex flex-wrap justify-between mb-8">
+                        <div className="w-[94%] lg:w-[55%] m-auto text-left mt-4">
+                            <div className="mb-2 flex justify-between">
+                                <h1 className="font-bold">News and Updates</h1>
+                                <span className="hover:underline">View all</span>
+                            </div>
 
-            <div className="w-[90%] sm:w-[80%] md:w-[70%] text-[12px] md:text-[16px] m-auto my-8 mb-12 text-left">
-                <h1 className="font-bold mt-4"> What is GST ? </h1>
+                            <div className="border border-blue-200 rounded-lg shadow-md">
+                                <div className="px-2 py-6 cursor-pointer hover:bg-blue-200">
+                                    <p className="font-bold pl-6 hover:underline">Advisory on difference in value of Table 8A and 8C of Annual FY 23-24</p>
+                                    <div className="w-[90%] m-auto mt-2 text-[14px] flex justify-between">
+                                        <div>Dec 9th, 2024</div>
+                                        <div className="bg-gray-300 px-2 rounded-lg">RETURNS</div>
+                                    </div>
+                                </div>
 
-                <p className="p-4">
-                    GST (Goods and Services Tax) is a comprehensive indirect tax system implemented in many countries, including India, to simplify and unify the taxation structure. It replaces multiple indirect taxes that were previously levied by both the central and state governments, such as service tax, VAT (Value Added Tax), excise duty, and more. GST is aimed at creating a single, integrated market by ensuring that goods and services are taxed uniformly across the country.
-                </p>
+                                <div className="px-2 py-6 cursor-pointer hover:bg-blue-200">
+                                    <p className="font-bold pl-6 hover:underline">Advisory for Biometric-Based Aadhaar Authentication and Document Verification for GST Registration Applicants of Haryana, manipur, Meghalya and Tripura</p>
+                                    <div className="w-[90%] m-auto mt-2 text-[14px] flex justify-between">
+                                        <div>Dec 9th, 2024</div>
+                                        <div className="bg-gray-300 px-2 rounded-lg">RETURNS</div>
+                                    </div>
+                                </div>
 
-                <h1 className="font-bold mt-4">Key Features of GST</h1>
+                                <div className="px-2 py-6 cursor-pointer hover:bg-blue-200">
+                                    <p className="font-bold pl-6 hover:underline">Advisory on mandatory Sequential Filling of G S TR-7 Return as per Notification No. 17/2024</p>
+                                    <div className="w-[90%] m-auto mt-2 text-[14px] flex justify-between">
+                                        <div>Dec 9th, 2024</div>
+                                        <div className="bg-gray-300 px-2 rounded-lg">RETURNS</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
-                <ol className="p-2 list-decimal leading-8">
-                    <li>
-                        <b>One Nation, One Tax:</b> GST brings uniformity to the taxation system by replacing a plethora of taxes with a single, consolidated tax applicable across the nation.
-                    </li>
-                    <li>
-                        <b>Dual Structure:</b> In India, GST follows a dual model, which includes:
+                        <div className="w-[94%] lg:w-[40%] m-auto mt-4">
+                            <h1 className="font-bold mb-2 text-left"> Popular Help Topics </h1>
+                            <div className="text-left border border-blue-200 cursor-pointer rounded-lg shadow-md">
+                                <div className="p-2 flex justify-between hover:underline hover:bg-blue-200">
+                                    <p>How do I register width GST?</p>
+                                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                                </div><hr/>
+                                <div className="p-2 flex justify-between hover:underline hover:bg-blue-200">
+                                    <p>How do I apply for refund?</p>
+                                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                                </div><hr/>
+                                <div className="p-2 flex justify-between hover:underline hover:bg-blue-200">
+                                    <p>How do I file returns?</p>
+                                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                                </div><hr/>
+                                <div className="p-2 flex justify-between hover:underline hover:bg-blue-200">
+                                    <p>How can I use Returns offline Tool?</p>
+                                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                                </div><hr/>
+                                <div className="p-2 flex justify-between hover:underline hover:bg-blue-200">
+                                    <p>How do I file an appeal?</p>
+                                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                                </div><hr/>
+                                <div className="p-2 flex justify-between hover:underline hover:bg-blue-200">
+                                    <p>How do I file intimation about voluntary payment?</p>
+                                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                                </div>
+                            </div>
 
-                        <ol className="p-2 list-disc">
-                            <li>
-                                <b>Central GST (CGST):</b> Collected by the central government.
-                            </li>
-                            <li>
-                                <b>State GST (SGST):</b> Collected by state governments for intra-state transactions.
-                            </li>
-                            <li>
-                                <b>Integrated GST (IGST):</b> Collected for inter-state transactions and imports, shared between the central and state governments.
-                            </li>
-                        </ol>
-                    </li>
+                            <div className="text-[13px] mt-4 p-4 flex justify-around border border-blue-200 rounded-lg shadow-md">
+                                <div>
+                                    <h1>Help Desk Number:</h1>
+                                    <span className="text-blue-700 font-bold text-[14px]">1800-103-4786</span>
+                                </div>
+                                <div className="border border-gray-400 "></div>
+                                <div>
+                                    <h1>Log/Track Your Issues here</h1>
+                                    <span className="text-blue-700 font-bold text-[14px] cursor-pointer hover:underline">Grievance Redressal <ion-icon name="open"></ion-icon></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                    
 
-                    <li>
-                        <b>Destination-Based Tax:</b> GST is levied at the point of consumption, meaning that the state where the goods or services are consumed collects the tax. This is in contrast to earlier systems where taxes were collected at the point of origin.
-                    </li>
+                    <div className="flex flex-wrap justify-between">
+                        <div className="w-[94%] lg:w-[55%] m-auto mt-4">
+                            <div className="mb-2 flex justify-between">
+                                <h1 className="font-bold">Upcoming Due Dates</h1>
+                                <span>DOWNLOAD PDF <ion-icon name="open"></ion-icon></span>
+                            </div>
 
-                    <li>
-                        <b>Tax Slabs:</b> GST has multiple tax rates to accommodate the diverse range of goods and services. The common tax slabs in India are 0%, 5%, 12%, 18%, and 28%. Essential items like food grains are taxed at 0%, while luxury and demerit goods are taxed at the highest slab.
-                    </li>
+                            <table className="text-left">
+                                <tbody>                                                                    
+                                <tr className="text-center font-bold">
+                                    <td className="border border-black">Monthly</td>
+                                    <td className="border border-black">Quarterly</td>
+                                    <td colSpan={"2"} className="pl-4 border border-black">Other Due Dates</td>
+                                </tr>
 
-                    <li>
-                        <b>Input Tax Credit (ITC):</b> Businesses can claim a credit for the taxes they pay on inputs (raw materials, services) against the tax they collect on output. This ensures a seamless flow of credit throughout the supply chain, reducing cascading effects where tax is levied on tax.
-                    </li>
+                                <tr>
+                                    <td className="w-[25%] pl-2 border border-black">
+                                        <h1 className="text-[13px]">GSTR-3B (Nov, 2024)</h1>
+                                        <p className="text-[13px] font-bold">Dec 20th, 2024 <ion-icon name="information-circle"></ion-icon></p>
+                                    </td>
+                                    <td className="w-[25%] pl-2 border border-black">
+                                        <h1 className="text-[13px]">GSTR-3B (Oct-Dec, 2024)</h1>
+                                        <p className="text-[13px] font-bold">Jan 22nd, 24th, 2025 <ion-icon name="information-circle"></ion-icon></p>
+                                    </td>
+                                    <td className="w-[25%] pl-2 border border-black">
+                                        <h1 className="text-[13px]">GSTR-5 (Nov, 2024)</h1>
+                                        <p className="text-[13px] font-bold">Dec 13th, 2024</p>
+                                    </td>
+                                    <td className="w-[25%] pl-2 border border-black">
+                                        <h1 className="text-[13px]">GSTR-5A (Nov, 2024)</h1>
+                                        <p className="text-[13px] font-bold">Dec 20th, 2024</p>
+                                    </td>
+                                </tr>
+                                
+                                <tr>
+                                    <td className="pl-2 border border-black">
+                                        <h1 className="text-[13px]">GSTR-1 (Nov, 2024)</h1>
+                                        <p className="text-[13px] font-bold">Dec 11th, 2024 <ion-icon name="information-circle"></ion-icon></p>
+                                    </td>
+                                    <td className="pl-2 border border-black">
+                                        <h1 className="text-[13px]">GSTR-1 (Oct-Dec, 2024)</h1>
+                                        <p className="text-[13px] font-bold">Jan 13th, 2025 <ion-icon name="information-circle"></ion-icon></p>
+                                    </td>
+                                    <td className="pl-2 border border-black">
+                                        <h1 className="text-[13px]">GSTR-5 (Nov, 2024)</h1>
+                                        <p className="text-[13px] font-bold">Dec 13th, 2024</p>
+                                    </td>
+                                    <td className="pl-2 border border-black">
+                                        <h1 className="text-[13px]">GSTR-5A (Nov, 2024)</h1>
+                                        <p className="text-[13px] font-bold">Dec 10th, 2024</p>
+                                    </td>
+                                </tr>
+                                
+                                <tr>
+                                    <td className="pl-2 border border-black">
+                                        <h1 className="text-[13px]">IFF (Optional Nov, 2024)</h1>
+                                        <p className="text-[13px] font-bold">Dec 13th, 2024 <ion-icon name="information-circle"></ion-icon> </p>
+                                    </td>
+                                    <td className="pl-2 border border-black">
+                                        <h1 className="text-[13px]">CMP-08 (Oct-Dec, 2024)</h1>
+                                        <p className="text-[13px] font-bold">Jan 18th, 2025</p>
+                                    </td>
+                                    <td className="pl-2 border border-black">
+                                        <h1 className="text-[13px]">GSTR-8 (Nov, 2024)</h1>
+                                        <p className="text-[13px] font-bold">Dec 10th, 2024</p>
+                                    </td>
+                                    <td className="pl-2 border border-black">
+                                        <h1 className="text-[13px]">RFD-10</h1>
+                                        <p className="text-[13px] font-bold">2 years from the last day of the quarter in which supply was received</p>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
 
-                    <li>
-                        <b>Simplified Compliance:</b> GST has digitized tax filing and compliance through an online portal, making it easier for businesses to register, file returns, and pay taxes.
-                    </li>
+                        <div className="w-[94%] lg:w-[40%] m-auto mt-4">
+                            <div className="mb-2 flex justify-between">
+                                <h1 className="font-bold">GST Media</h1>
+                                <span>View All <ion-icon name="open"></ion-icon></span>
+                            </div>
 
-                </ol>
+                            <div className="p-2 border border-blue-200 shadow-md rounded-lg">
+                                <div className="p-2 flex ">
+                                    <img src="youtube.png" alt="" className="w-[50px] h-[50px]"/>
+                                    <NavLink to={"https://www.youtube.com/watch?v=uwyubFFLFkU"} target="_blank" className="text-[14px] text-blue-600 text-left font-bold pl-4 hover:underline">Know more about Map-based Geocoding in the <br/>Registration precess, Watch live Video.</NavLink>
+                                </div><hr/>
 
-                <h1 className="font-bold mt-4">Advantages of GST</h1>                
-                
-                <ol className="p-2 list-decimal leading-8">
-                    <li>
-                        <b>Eliminates Cascading Taxation:</b> Under the pre-GST regime, taxes were levied on top of other taxes, leading to higher costs for consumers. GST eliminates this cascading effect by providing ITC.
-                    </li>
+                                <div className="p-2 flex ">
+                                    <img src="youtube.png" alt="" className="w-[50px] h-[50px]"/>
+                                    <NavLink to={"https://www.youtube.com/watch?v=RgR7XqJr1Tc"} target="_blank" className="text-[14px] text-blue-600 text-left font-bold pl-4 hover:underline">How to validate Digital Signature affixted to the <br/>downloaded document from the GST Portal?</NavLink>
+                                </div><hr/>
 
-                    <li>
-                        <b>Encourages Formal Economy:</b> GST incentivizes businesses to maintain proper records and operate within the tax framework, thereby reducing tax evasion.
-                    </li>
-
-                    <li>
-                        <b>Boosts GDP Growth:</b> By streamlining the taxation process and reducing barriers to trade, GST fosters economic growth and increases government revenues.
-                    </li>
-
-                    <li>
-                        <b>Simplifies Tax Administration:</b> With GST, businesses deal with a single tax system rather than navigating multiple taxes, making administration more efficient.
-                    </li>
-
-                    <li>
-                        <b>Promotes Interstate Trade:</b> Uniform tax rates reduce the complexity and cost of interstate trade, leading to the creation of a unified national market.
-                    </li>
-                </ol>
-
-                <h1 className="font-bold mt-4">Challenges of GST</h1>
-
-                <ol className="p-2 list-decimal leading-8">
-                    <li>
-                        <b>Compliance Burden:</b> Small businesses may find it challenging to adapt to the extensive filing requirements, which include monthly, quarterly, and annual returns.
-                    </li>
-
-                    <li>
-                        <b>Multiple Tax Rates:</b> The existence of different tax slabs can complicate classification and lead to disputes about which rate applies to specific goods or services.
-                    </li>
-
-                    <li>
-                        <b>Initial Implementation Issues:</b> When GST was introduced, businesses faced difficulties transitioning to the new system due to technical glitches and lack of clarity in rules.
-                    </li>
-
-                    <li>
-                        <b>Impact on Small Businesses:</b> Small traders and businesses with low financial literacy often struggle with GST compliance, despite the government's efforts to simplify processes.
-                    </li>
-                </ol>
-
-                <h1 className="font-bold mt-4">GST in India: A Landmark Reform</h1>
-
-                <p className="p-4">
-                    Implemented on <b>July 1, 2017,</b> GST marked a significant overhaul of the indirect tax system in India. It was introduced through the <b>101st Amendment to the Constitution</b> and is governed by the GST Council, which consists of representatives from the central and state governments. The council decides on tax rates, exemptions, and other policy-related matters. <br/><br/>
-
-                    In the Indian context, GST aims to address issues such as tax evasion, improve the ease of doing business, and create a transparent tax structure. While it continues to evolve, GST is widely regarded as a transformative measure in the country's economic reforms.
-                </p>
-
-                <h1 className="font-bold mt-4">Conclusion</h1>
-
-                <p className="p-4">
-                    GST represents a significant shift in the way taxation is administered, promoting efficiency, transparency, and uniformity. Although its implementation faced initial hurdles, it is a vital step toward a more structured and simplified tax regime that benefits businesses, governments, and consumers alike. Its long-term impact is expected to be a more robust and globally competitive economy.
-                </p>
-
-            </div>
-
-
-            <Footer/>
-
+                                <div className="p-2 flex ">
+                                    <img src="youtube.png" alt="" className="w-[50px] h-[50px]"/>
+                                    <NavLink to={"https://www.youtube.com/watch?v=OszCwJymYWc"} target="_blank" className="text-[14px] text-blue-600 text-left font-bold pl-4 hover:underline">How to utilise Cash/ITC for Payment of Demand? <br/>Watch video...</NavLink>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>        
         </div>
+
+        <Footer/>
+    </div>
     )
 }
-
 
 export default Home;
