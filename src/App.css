@@ -22,3 +22,26 @@
   display: none;
 }
 
+
+/* for creating Marquee in header component */
+
+.marquee-container {    
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;  
+}
+
+.marquee-text {
+  display: inline-block;
+  animation: marquee 25s linear infinite;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(130%);
+  }
+  to {
+    transform: translateX(-130%);
+  }
+}
+

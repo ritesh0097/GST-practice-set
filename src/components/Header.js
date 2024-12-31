@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import Navs from "./Navs";
+// import Navs from "./Navs";
 import SideNav from "./SideNav";
 import BlankDiv from "./BlankDiv";
 
