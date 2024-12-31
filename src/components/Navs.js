@@ -15,7 +15,7 @@ const Navs = () => {
                     }
 
                     return (
-                        <li className="px-6 py-3 cursor-pointer hover:bg-cyan-500">
+                        <li className="navl px-6 py-3 cursor-pointer hover:bg-cyan-500">
                         <Link to={lst.link} key={lst.name} >{lst.name}</Link>
                         </li>
                     )

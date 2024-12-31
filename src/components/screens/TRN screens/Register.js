@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import Header from "../Header";
-import Footer from "../Footer";
+import Header from "../../Header";
+import Footer from "../../Footer";
 
 
 const Register = () => {
@@ -110,7 +110,7 @@ const Register = () => {
                 <input type="text" id="panNumber" placeholder="Enter Mobile Number" required className="my-1 p-2 border border-black" />
                 <p><ion-icon name="alert-circle" class="text-[18px]"></ion-icon> Separate OTP will be sent to this mobile number</p>
 
-                <button type="submit" className="bg-blue-900 text-white py-2 my-4 mt-8"> PROCEED </button>
+                <Link to={"verification-otp"} className="bg-blue-900 text-white text-center py-2 my-4 mt-8"><button type="submit"> PROCEED </button></Link>
                 
             </form>
 

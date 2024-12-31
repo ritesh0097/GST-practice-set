@@ -2,9 +2,14 @@ import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './components/screens/Home';
 import Login from './components/screens/Login';
-import Register from './components/screens/Register';
-import Register2 from './components/screens/Register2';
+import Register from './components/screens/TRN screens/Register';
+import Register2 from './components/screens/Registration screens/Register2';
 import Main from './components/screens/Main';
+import Otp from './components/screens/TRN screens/Otp';
+import MsgPage from './components/screens/TRN screens/MsgPage';
+import Otp2 from './components/screens/Registration screens/Otp2';
+import Dashboard from './components/screens/Registration screens/Dashboard';
+import Step1 from './components/screens/Filling business details/Step1';
 
 
 function App() {
@@ -17,7 +22,13 @@ function App() {
           <Route path='/services' element={<Login/>}/>
           <Route path='/login' element={<Login/>}/>
           <Route path='/register/new-registration' element={<Register/>}/>
+          <Route path='/register/new-registration/verification-otp' element={<Otp/>}/>
+          <Route path='/register/new-registration/verification-otp/msg-page' element={<MsgPage/>}/>
           <Route path='/register/temporary-reference-number' element={<Register2/>}/>
+          <Route path='/register/temporary-reference-number/otp' element={<Otp2/>}/>
+          <Route path='/dashboard' element={<Dashboard/>}/>
+          <Route path='/step1' element={<Step1/>}/>
+
         </Routes>    
       </BrowserRouter>
 

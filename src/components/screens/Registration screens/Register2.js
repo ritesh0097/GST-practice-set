@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import Header from "../Header";
-import Footer from "../Footer";
+import Header from "../../Header";
+import Footer from "../../Footer";
 
 
 const Register2 = () => {
@@ -42,7 +42,7 @@ const Register2 = () => {
                 <input type="text" id="panNumber" placeholder="Enter characters as displayed in the CAPTCHA image" required className="my-1 p-2 border border-black" />
 
                 
-                <button type="submit" className="bg-blue-900 text-white py-2 my-4 mt-8"> PROCEED </button>
+                <Link to={"/register/temporary-reference-number/otp"} className="bg-blue-900 text-white text-center py-2 my-4 mt-8"><button type="submit"> PROCEED </button></Link>
                 
             </form>
 

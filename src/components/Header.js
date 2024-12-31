@@ -38,7 +38,7 @@ const Header = () => {
         
             </div>
                                 
-            <Navs/>
+            {/* <Navs/> */}
             <SideNav/>
             <BlankDiv/>
         </>
