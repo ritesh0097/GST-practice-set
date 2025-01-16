@@ -1,14 +1,30 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Header from "../../Header";
 import Footer from "../../Footer";
+import { useState } from "react";
 
 
 const Register2 = () => {
+
+    let navigate = useNavigate();
+
+    let [trn, setTrn] = useState("")
+    let [char, setChar] = useState("")    
+
+    function submit(e) {
+        e.preventDefault();
+        
+        setTrn("")
+        setTrn("")
+        
+        navigate('/register/temporary-reference-number/otp');
+    }
+
     return(
         <div>
-            <Header/>            
+            <Header/>        
 
-            <div className="bg-white w-[98%] sm:w-[80%] md:w-[70%] lg:w-[60%] xl:w-[55%] 2xl:w-[50%] m-auto my-1 flex flex-col items-start">
+            <div className="bg-white w-[98%] sm:w-[80%] md:w-[70%] lg:w-[60%] m-auto my-1 flex flex-col items-start">
             <p className="bg-slate-100 w-full p-2 text-left"> <span className="text-blue-600">Home</span> <ion-icon name="chevron-forward-outline"></ion-icon> Registration</p>
 
             <form className="w-[90%] m-auto mb-[5%] py-4 flex flex-col text-left justify-start">
@@ -35,14 +51,13 @@ const Register2 = () => {
                     <label className="cursor-pointer"><Link to={"/register/temporary-reference-number"}><input type="radio" name={"registation-type"} className="m-2 lg:ml-4" checked/> Temporary Reference Number (TRN)</Link></label>
                 </ul>
 
-                <label htmlFor="panNumber" className="py-1 mt-2">Temporary Reference Number (TRN) <span className="text-red-600">*</span></label>
-                <input type="text" id="panNumber" placeholder="Enter Temporary Reference Number (TRN)" required className="my-1 p-2 border border-black" />
+                <label htmlFor="trn" className="py-1 mt-2">Temporary Reference Number (TRN) <span className="text-red-600">*</span></label>
+                <input type="text" id="trn" placeholder="Enter Temporary Reference Number (TRN)" value={trn} onChange={(e) => setTrn(e.target.value)} className="my-1 p-2 border border-black" />
                 
-                <label htmlFor="panNumber" className="py-1 mt-2">Type the characters you see in the image below <span className="text-red-600">*</span></label>
-                <input type="text" id="panNumber" placeholder="Enter characters as displayed in the CAPTCHA image" required className="my-1 p-2 border border-black" />
-
+                <label htmlFor="char" className="py-1 mt-2">Type the characters you see in the image below <span className="text-red-600">*</span></label>
+                <input type="text" id="char" value={char} onChange={(e) => setChar(e.target.value)} placeholder="Enter characters as displayed in the CAPTCHA image" className="my-1 p-2 border border-black" />
                 
-                <Link to={"/register/temporary-reference-number/otp"} className="bg-blue-900 text-white text-center py-2 my-4 mt-8"><button type="submit"> PROCEED </button></Link>
+                <button type="submit" onClick={submit} className="bg-blue-900 text-white text-center py-2 my-4 mt-8"> PROCEED </button>
                 
             </form>
 

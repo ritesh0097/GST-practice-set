@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import Footer from "../../Footer";
 import Header from "../../Header";
 
-const Step1 = () => {
+const Step2 = () => {
     return (
         <div>
             <Header/>
@@ -36,12 +36,13 @@ const Step1 = () => {
             </div>
 
             <div className="text-[12px] flex my-4">
-                <div className="bg-white flex flex-col justify-center p-2 border border-black cursor-pointer hover:drop-shadow-xl">
+                <div className="bg-blue-900 text-white flex flex-col justify-center p-2 border border-black cursor-pointer hover:drop-shadow-xl">
+                    <span className="relative text-[12px] text-right"><ion-icon name="checkmark-sharp"></ion-icon></span>
                     <span className="text-3xl"><ion-icon name="bag-handle-outline"></ion-icon></span>
                     Business Details
                 </div>
 
-                <div className="flex flex-col justify-center p-2 border border-black cursor-pointer hover:drop-shadow-xl">
+                <div className="bg-white flex flex-col justify-center p-2 border border-black cursor-pointer hover:drop-shadow-xl">
                     <span className="text-3xl"><ion-icon name="person-outline"></ion-icon></span>
                     Promoters / Partners
                 </div>
@@ -90,37 +91,67 @@ const Step1 = () => {
 
             <div className="bg-white w-[100%] m-auto mb-[5%] p-4 text-left justify-start">
                 <div className="flex items-center justify-between">
-                    <h1 className="text-2xl">Details of your Business</h1>
+                    <h1 className="text-2xl">Details of Proprietor</h1>
                     <span className="text-right my-2 py-1"><span className="text-red-600">*</span> indicates mandatory fields</span>
-                </div><hr/>
-
-                <div className="bg-gray-100 text-[15px] flex justify-between px-3 p-4">
-                    <div className="">
-                        <h1>Legal Name of the Business</h1>
-                        <p className="font-bold">Not Available</p>
-                    </div>
-                    <div className="">
-                        <h1>Permanent Account Number (PAN)</h1>
-                        <p className="font-bold">Not Available</p>
-                    </div>
-                    <div className="">
-                        <h1>Date of Creation of PAN</h1>
-                        <p className="font-bold">Not Available</p>
-                    </div>
-                </div>
+                </div><hr/>                
                 
-                <form className="text-[15px] mt-4">
-                    <div className="mt-4 p-4 flex justify-start">
+                <form className="text-[15px] mt-4">                    
+                    <div className="bg-gray-100 mt-4 p-4">
                         <div>
-                            <label htmlFor="tradeName" className="">Trade Name </label><br/>
-                            <input type="text" id="tradeName" placeholder="Enter Trade Name" required className="w-[300px] my-1 p-2 border border-black" />
+                            <h1 className="text-xl">Name of Person</h1>
                         </div>
-                        <div className="mx-4"></div>
-                        <div>
-                            <label htmlFor="panNumber" className="py-1">Constitution of Business (Select Appropriate) <span className="text-red-600">*</span></label><br/>
-                            <input type="text" id="panNumber" placeholder="Enter Temporary Reference Number (TRN)" required className="w-[300px] my-1 p-2 border border-black" />
+
+                        <div className="mt-2 flex justify-between">
+                            <div>
+                                <label htmlFor="tradeName" className="py-">First Name <span className="text-red-600">*</span></label><br/>
+                                <input type="text" id="tradeName" placeholder="Enter First Name" required className="w-[250px] my-1 p-2 border border-black" />
+                            </div>                        
+                            <div>
+                                <label htmlFor="panNumber" className="py-1">Middle Name </label><br/>
+                                <input type="text" id="panNumber" placeholder="Enter Middle Name" required className="w-[250px] my-1 p-2 border border-black" />
+                            </div>
+                            <div>
+                                <label htmlFor="panNumber" className="py-1">Last Name</label><br/>
+                                <input type="text" id="panNumber" placeholder="Enter Last Name" required className="w-[250px] my-1 p-2 border border-black" />
+                            </div>
                         </div>
                     </div>
+                    
+                    <div className="mt-4 p-4">
+                        <div>
+                            <h1 className="text-xl">Name of Father</h1>
+                        </div>
+
+                        <div className="mt-2 flex justify-between">
+                            <div>
+                                <label htmlFor="tradeName" className="py-">First Name <span className="text-red-600">*</span></label><br/>
+                                <input type="text" id="tradeName" placeholder="Enter First Name" required className="w-[250px] my-1 p-2 border border-black" />
+                            </div>                        
+                            <div>
+                                <label htmlFor="panNumber" className="py-1">Middle Name </label><br/>
+                                <input type="text" id="panNumber" placeholder="Enter Middle Name" required className="w-[250px] my-1 p-2 border border-black" />
+                            </div>
+                            <div>
+                                <label htmlFor="panNumber" className="py-1">Last Name</label><br/>
+                                <input type="text" id="panNumber" placeholder="Enter Last Name" required className="w-[250px] my-1 p-2 border border-black" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="bg-gray-100 mt-4 p-4 flex justify-between">                        
+                        <div>
+                            <label htmlFor="tradeName" className="py-">Date of Birth <span className="text-red-600">*</span></label><br/>
+                            <input type="date" id="tradeName" required className="w-[250px] my-1 p-2 border border-black" />
+                        </div>                        
+                        <div>
+                            <label htmlFor="panNumber" className="py-1"><ion-icon name="phone-portrait-outline"></ion-icon> Mobile Number <span className="text-red-600">*</span> </label><br/>
+                            <div><span className="bg-slate-300 p-3">+91</span><input type="text" id="panNumber" placeholder="Enter Mobile Number" required className="w-[250px] my-1 p-2 border border-black" /></div>
+                        </div>
+                        <div>
+                            <label htmlFor="panNumber" className="py-1"><ion-icon name="mail-open-outline"></ion-icon> Email Address <span className="text-red-600">*</span></label><br/>
+                            <input type="email" id="panNumber" placeholder="Enter Email Address" required className="w-[250px] my-1 p-2 border border-black" />
+                        </div>                        
+                    </div>                    
 
                     <div className="bg-gray-100 mt-4 p-4 flex justify-start">
                         <div>
@@ -198,8 +229,8 @@ const Step1 = () => {
                 </form>
 
                 <div className="mt-12 flex justify-end items-center">
-                    <Link to={"/dashboard"}><div className="px-8 py-2 mx-2 font-bold border border-black flex items-center cursor-pointer hover:bg-slate-400">BACK</div></Link>
-                    <Link to={"/promoters and partner details"}><div className="bg-blue-900 text-white px-8 py-2 mx-2 font-bold border border-black flex items-center cursor-pointer hover:bg-blue-500">SAVE & CONTINUE</div></Link>
+                    <Link to={"/business details"}><div className="px-8 py-2 mx-2 font-bold border border-black flex items-center cursor-pointer hover:bg-slate-400">BACK</div></Link>
+                    <Link to={"/authorized signatory"}><div className="bg-blue-900 text-white px-8 py-2 mx-2 font-bold border border-black flex items-center cursor-pointer hover:bg-blue-500">SAVE & CONTINUE</div></Link>
                 </div>
                 </div>
 
@@ -212,4 +243,4 @@ const Step1 = () => {
     )
 }
 
-export default Step1;
+export default Step2;

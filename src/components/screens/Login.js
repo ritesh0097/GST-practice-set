@@ -1,11 +1,24 @@
-import { NavLink, Link } from "react-router-dom";
+import { NavLink, Link, useNavigate } from "react-router-dom";
 import Header from "../Header";
 import Footer from "../Footer";
+import { useState } from "react";
 
 const Login = () => {
+    
+    let navigate = useNavigate();
+
+    let [username,setUsername] = useState("")
+    let [password,setPassword] = useState("")
+
     function submit(e) {
         e.preventDefault();
+
+        setUsername("")
+        setPassword("")
+        
+        navigate('/');
     }
+
 
     return(
         <div className="">
@@ -21,10 +34,10 @@ const Login = () => {
                 <span className="text-right my-2 py-1"><span className="text-red-600">*</span> indicates mandatory fields</span>
 
                 <label htmlFor="username" className="py-1 mt-2">Username <span className="text-red-600">*</span></label>
-                <input type="text" id="username" placeholder="Enter Username" required className="my-1 p-2 border border-black"/>
+                <input type="text" id="username" value={username} onChange={(e) => setUsername(e.target.value)} placeholder="Enter Username" className="my-1 p-2 border border-black"/>
                 
                 <label htmlFor="Password" className="py-1 mt-2">Password <span className="text-red-600">*</span></label>
-                <input type="text" id="password" placeholder="Enter Password" required className="my-1 p-2 border border-black" />
+                <input type="text" id="password" value={password} onChange={(e) => setPassword(e.target.value)} placeholder="Enter Password" className="my-1 p-2 border border-black" />
 
                 <button type="submit" onClick={submit} className="bg-blue-900 w-[120px] text-white py-2 my-2"> LOGIN </button>
 

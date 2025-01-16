@@ -7,10 +7,10 @@ const MsgPage = () => {
         <div>
             <Header/>
             
-            <div className="bg-white w-[98%] sm:w-[80%] md:w-[70%] lg:w-[60%] xl:w-[55%] 2xl:w-[50%] m-auto my-1 flex flex-col items-start">
+            <div className="bg-white w-[98%] sm:w-[80%] md:w-[70%] lg:w-[60%] m-auto my-1 flex flex-col items-start">
                 <p className="bg-slate-100 w-full p-2 text-left"> <span className="text-blue-600">Home</span> <ion-icon name="chevron-forward-outline"></ion-icon>  <span className="text-blue-600"> Registration </span> <ion-icon name="chevron-forward-outline"></ion-icon> Verify</p>
 
-                <div className="bg-green-100 text-green-600 m-2 text-left p-4">
+                <div className=" bg-green-100 text-green-800 text-left p-4 m-2">
                     You have successfully submitted Part A of the registration process. Your Temporary Reference Number (TRN) is 0123245235TRN.
                 </div>
 

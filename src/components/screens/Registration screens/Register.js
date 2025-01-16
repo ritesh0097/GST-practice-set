@@ -1,14 +1,34 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Header from "../../Header";
 import Footer from "../../Footer";
+import { useState } from "react";
 
 
 const Register = () => {
+
+    let navigate = useNavigate();
+
+    let [businessName,setBusinessName] = useState("")
+    let [panNumber,setPanNumber] = useState("")
+    let [email,setEmail] = useState("")
+    let [mobNumber,setMobNumber] = useState("")
+
+    function submit(e) {
+        e.preventDefault();
+
+        setBusinessName("")
+        setPanNumber("")
+        setEmail("")
+        setMobNumber("")
+        
+        navigate('/register/new-registration/verification-otp');
+    }
+
     return(
         <div>
-            <Header/>    
+            <Header/>
 
-            <div className="bg-white w-[98%] sm:w-[80%] md:w-[70%] lg:w-[60%] xl:w-[55%] 2xl:w-[50%] m-auto my-1 flex flex-col items-start">
+            <div className="bg-white w-[98%] sm:w-[80%] md:w-[70%] lg:w-[60%] m-auto my-1 flex flex-col items-start">
             <p className="bg-slate-100 w-full p-2 text-left"> <span className="text-blue-600">Home</span> <ion-icon name="chevron-forward-outline"></ion-icon> Registration</p>
 
             <form className="w-[90%] m-auto mb-[5%] py-4 flex flex-col text-left justify-start">
@@ -52,65 +72,28 @@ const Register = () => {
                 <label htmlFor="businessName" className="py-1 mt-2">State / UT <span className="text-red-600">*</span></label>
                 <select className="my-1 p-2 border border-black">
                     <option>Select</option>
-                    <option>Andaman and Nicobar Islands</option>
-                    <option>Andhra Pradesh</option>
-                    <option>Arunachal Pradesh</option>
-                    <option>Assam</option>
-                    <option>Bihar</option>
-                    <option>Chandigarh</option>
-                    <option>Chhattisgarh</option>
-                    <option>Dadra and Nagar Haveli and Daman and Diu</option>
-                    <option>Delhi</option>
-                    <option>Goa</option>
-                    <option>Gujarat</option>
-                    <option>Haryana</option>
-                    <option>Himachal Pradesh</option>
-                    <option>Jammu and Kashmir</option>
-                    <option>Jharkhand</option>
-                    <option>Karnataka</option>
-                    <option>Kerala</option>
-                    <option>Ladakh</option>
-                    <option>Lakshadweep</option>
-                    <option>Madhya Pradesh</option>
-                    <option>Maharashtra</option>
-                    <option>Manipur</option>
-                    <option>Meghalaya</option>
-                    <option>Mizoram</option>
-                    <option>Nagaland</option>
-                    <option>Odisha</option>
-                    <option>Other Teritory</option>
-                    <option>Puducherry</option>
-                    <option>Punjab</option>
-                    <option>Rajasthan</option>
-                    <option>Sikkim</option>
-                    <option>Tamil Nadu</option>
-                    <option>Telengana</option>
-                    <option>Tripura</option>
-                    <option>Uttar Pradesh</option>
-                    <option>Uttarakhand</option>
-                    <option>West Bengal</option>                    
                 </select>
                 
                 <label htmlFor="businessName" className="py-1 mt-2">District </label>
                 <select className="my-1 p-2 border border-black">
-                    <option>Select</option>                    
+                    <option>Select</option>
                 </select>
 
                 <label htmlFor="businessName" className="py-1 mt-2">Legal Name of the Business (As mentioned in PAN) <span className="text-red-600">*</span></label>
-                <input type="text" id="businessName" placeholder="Enter Legal Name of Business" required className="my-1 p-2 border border-black"/>
+                <input type="text" id="businessName" value={businessName} onChange={(e) => setBusinessName(e.target.value)} placeholder="Enter Legal Name of Business" className="my-1 p-2 border border-black"/>
                 
                 <label htmlFor="panNumber" className="py-1 mt-2">Permanent Account Number (PAN) <span className="text-red-600">*</span></label>
-                <input type="text" id="panNumber" placeholder="Enter Permanent Account Number (PAN)" required className="my-1 p-2 border border-black" />
+                <input type="text" id="panNumber" value={panNumber} onChange={(e) => setPanNumber(e.target.value)} placeholder="Enter Permanent Account Number (PAN)" className="my-1 p-2 border border-black" />
                 
                 <label htmlFor="email" className="py-1 mt-2">Email Address <span className="text-red-600">*</span></label>
-                <input type="text" id="panNumber" placeholder="Enter Email Adress" required className="my-1 p-2 border border-black" />
+                <input type="text" id="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Enter Email Adress" className="my-1 p-2 border border-black" />
                 <p><ion-icon name="alert-circle" class="text-[18px]"></ion-icon> OTP will be sent to this Email Address</p>
 
-                <label htmlFor="email" className="py-1 mt-2">Mobile Number <span className="text-red-600">*</span></label>
-                <input type="text" id="panNumber" placeholder="Enter Mobile Number" required className="my-1 p-2 border border-black" />
+                <label htmlFor="mobNumber" className="py-1 mt-2">Mobile Number <span className="text-red-600">*</span></label>
+                <input type="text" id="mobNumber" value={mobNumber} onChange={(e) => setMobNumber(e.target.value)} placeholder="Enter Mobile Number" className="my-1 p-2 border border-black" />
                 <p><ion-icon name="alert-circle" class="text-[18px]"></ion-icon> Separate OTP will be sent to this mobile number</p>
 
-                <Link to={"verification-otp"} className="bg-blue-900 text-white text-center py-2 my-4 mt-8"><button type="submit"> PROCEED </button></Link>
+                <button type="submit" onClick={submit} className="bg-blue-900 text-white text-center py-2 my-4 mt-8"> PROCEED </button>
                 
             </form>
 

@@ -1,12 +1,28 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Footer from "../../Footer";
 import Header from "../../Header";
+import { useState } from "react";
 
-const Otp2 = () => {
+const Otp = () => {
+
+    let navigate = useNavigate();
+
+    let [mobotp, setMobotp] = useState("")
+    let [emailotp, setEmailotp] = useState("")
+
+    function submit(e) {
+        e.preventDefault();
+
+        setMobotp("")
+        setEmailotp("")
+        
+        navigate('/register/new-registration/verification-otp/msg-page');
+    }
+
     return(
         <div>
             <Header/>
-                <div className="bg-white w-[98%] sm:w-[80%] md:w-[70%] lg:w-[60%] xl:w-[55%] 2xl:w-[50%] m-auto my-1 flex flex-col items-start">
+                <div className="bg-white w-[98%] sm:w-[80%] md:w-[70%] lg:w-[60%] m-auto my-1 flex flex-col items-start">
                 <p className="bg-slate-100 w-full p-2 text-left"> <span className="text-blue-600">Home</span> <ion-icon name="chevron-forward-outline"></ion-icon>  <span className="text-blue-600"> Registration </span> <ion-icon name="chevron-forward-outline"></ion-icon> Verify</p>
                     
                 <form className="w-[90%] m-auto mb-[5%] py-4 flex flex-col text-left justify-start">
@@ -28,16 +44,22 @@ const Otp2 = () => {
                     <hr/>
                     <span className="text-right my-2 py-1"><span className="text-red-600">*</span> indicates mandatory fields</span>
 
-                    <label htmlFor="mobileOTP" className="py-1 mt-2"> Mobile / Email OTP <span className="text-red-600">*</span></label>
-                    <input type="text" id="mobileOTP" placeholder="Enter Mobile OTP" required className="my-1 p-2 border border-black"/>
-                    <p><ion-icon name="alert-circle" class="text-[18px]"></ion-icon> Fill OTP sent to mobile and Email </p>
+                    <label htmlFor="mobileOTP" className="py-1 mt-2"> Mobile OTP <span className="text-red-600">*</span></label>
+                    <input type="text" id="mobileOTP" value={mobotp} onChange={(e) => setMobotp(e.target.value)} placeholder="Enter Mobile OTP" className="my-1 p-2 border border-black"/>
+                    <p><ion-icon name="alert-circle" class="text-[18px]"></ion-icon> Enter OTP sent to your mobile number </p>
+
+                    <label htmlFor="emailOTP" className="py-1 mt-2"> Email OTP <span className="text-red-600">*</span></label>
+                    <input type="text" id="emailOTP" value={emailotp} onChange={(e) => setEmailotp(e.target.value)} placeholder="Enter Email OTP" className="my-1 p-2 border border-black" />
+                    <p><ion-icon name="alert-circle" class="text-[18px]"></ion-icon> Enter OTP sent to your Email Address </p>
+                    
                     <p className="my-2 py-1"><ion-icon name="alert-circle" class="text-[18px]"></ion-icon> Please check the junk/span folder in case you do not get email. </p>
 
                     <p className="text-blue-600"> Need OTP to be recent? <span className="cursor-pointer hover:underline"> Click here </span></p>
 
-                    <div className="flex justify-end mb-[100px]">
-                        <Link to={"/register/new-registration"} ><button className="w-[120px] text-1xl p-2 mx-1 border-2 border-black">BACK</button></Link>
-                        <Link to={"/dashboard"} ><button className="w-[120px] bg-blue-900 text-white text-1xl p-2 mx-1 border-2 border-black">PROCEED</button></Link>
+                    <div className="flex justify-end">
+                        <Link to={"/register/new-registration"}><button className="w-[120px] text-1xl p-2 mx-1 border-2 border-black">BACK</button></Link>
+
+                        <button type="submit" onClick={submit} className="w-[120px] bg-blue-900 text-white text-1xl p-2 mx-1 border-2 border-black">PROCEED</button>
                     </div>
                 
                 </form>
@@ -47,4 +69,4 @@ const Otp2 = () => {
     )
 }
 
-export default Otp2;
+export default Otp;

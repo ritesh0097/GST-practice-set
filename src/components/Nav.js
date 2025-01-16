@@ -9,7 +9,7 @@ const Nav = () => {
     return (
         <div>
         <nav className="steal-blue">
-            <ul className="w-[62%] m-auto text-white text-[15px] flex">
+            <ul className="w-[62%] lg:w-[85%] xl:w-[80%] lg:text-[10px] xl:text-[12px] 2xl:w-[70%] 2xl:text-[14px] m-auto text-white lg:flex hidden z-10">
                 <NavLink to="/"><li className="px-6 py-3 cursor-pointer">Home</li></NavLink>
                 <li onClick={showNav2} className="px-6 py-3 cursor-pointer flex items-end">Services <span className="text-[12px] ml-1"><ion-icon name="caret-down-outline"></ion-icon></span></li>
                 <li className="px-6 py-3 cursor-pointer">GST Law</li>
