@@ -9,7 +9,7 @@ const Nav = () => {
     return (
         <div>
         <nav className="steal-blue">
-            <ul className="w-[62%] lg:w-[85%] xl:w-[80%] lg:text-[10px] xl:text-[12px] 2xl:w-[70%] 2xl:text-[14px] m-auto text-white lg:flex hidden z-10">
+            <ul className="w-[62%] lg:w-[85%] xl:w-[80%] lg:text-[10px] xl:text-[14px] 2xl:w-[70%] m-auto text-white lg:flex hidden z-10">
                 <NavLink to="/"><li className="px-6 py-3 cursor-pointer">Home</li></NavLink>
                 <li onClick={showNav2} className="px-6 py-3 cursor-pointer flex items-end">Services <span className="text-[12px] ml-1"><ion-icon name="caret-down-outline"></ion-icon></span></li>
                 <li className="px-6 py-3 cursor-pointer">GST Law</li>
@@ -21,7 +21,7 @@ const Nav = () => {
             </ul>
         </nav>
 
-        <ul id="nav2" className="bg-slate-200 w-[64%] text-blue-900 text-[14px] flex absolute left-[50%] translate-x-[-50%] invisible">
+        <ul id="nav2" className="bg-slate-200 w-[64%] text text-blue-900 flex absolute left-[50%] translate-x-[-50%] invisible">
                 <li className="cursor-pointer hover:bg-slate-100 group">
                     <h1 className="px-6 py-3 border-b-2 hover:border-indigo-500">Registration</h1>
 
