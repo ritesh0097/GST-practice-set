@@ -4,10 +4,6 @@ import Header from "../../Header";
 
 const Up4 = () => {
 
-    function download() {
-        alert("Downloading...");
-    }
-
     return(
         <div>
             <Header/>
