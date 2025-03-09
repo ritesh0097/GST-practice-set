@@ -20,6 +20,16 @@ import Step8 from './components/screens/Filling business details/Step8';
 import Step9 from './components/screens/Filling business details/Step9';
 import Step10 from './components/screens/Filling business details/Step10';
 import Success from './components/screens/Filling business details/Success';
+import Up1 from './components/screens/User/up1';
+import Up2 from './components/screens/User/up2';
+import Up3 from './components/screens/User/up3';
+import Up4 from './components/screens/User/up4';
+import Up5 from './components/screens/User/up5';
+import Up8 from './components/screens/User/up8';
+import Up9 from './components/screens/User/up9';
+import Up6 from './components/screens/User/up6';
+import Up7 from './components/screens/User/up7';
+import Bank from './components/screens/User/Bank';
 
 
 function App() {
@@ -48,6 +58,18 @@ function App() {
           <Route path='/aadhar authentication' element={<Step9/>}/>
           <Route path='/verification' element={<Step10/>}/>
           <Route path='/success' element={<Success/>}/>
+
+          <Route path='/up1' element={<Up1/>} />
+          <Route path='/up2' element={<Up2/>} />
+          <Route path='/up3' element={<Up3/>} />
+          <Route path='/up4' element={<Up4/>} />
+          <Route path='/up5' element={<Up5/>} />
+          <Route path='/up6' element={<Up6/>} />
+          <Route path='/up7' element={<Up7/>} />
+          <Route path='/bank' element={<Bank/>} />
+          <Route path='/up8' element={<Up8/>} />
+          <Route path='/up9' element={<Up9/>} />
+          
 
         </Routes>    
       </BrowserRouter>

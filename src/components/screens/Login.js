@@ -16,7 +16,10 @@ const Login = () => {
         setUsername("")
         setPassword("")
         
-        navigate('/');
+        // navigate('/');
+        navigate('/up1');
+
+        localStorage.setItem("login",true)
     }
 
 

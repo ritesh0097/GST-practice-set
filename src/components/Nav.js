@@ -42,7 +42,7 @@ const Nav = () => {
 
                     <ul className="bg-slate-100 w-[100%] text-left absolute left-[-0.001%] hidden group-hover:flex">
                         <div>
-                            <li className="px-6 py-3 hover:underline">Create Challan</li>
+                            <Link to={"/up5"}><li className="px-6 py-3 hover:underline">Create Challan</li></Link>
                             <li className="px-6 py-3 hover:underline">Governance against Payment (GST PMT-07)</li>
                         </div>
                         <div className="mx-[10%]"></div>
@@ -53,7 +53,7 @@ const Nav = () => {
                 </li>
 
                 <li className="cursor-pointer hover:bg-slate-100 group">
-                    <h1 className="px-6 py-3 border-b-2 hover:border-indigo-500">User Services</h1>
+                    <Link to={"/up3"}><h1 className="px-6 py-3 border-b-2 hover:border-indigo-500">User Services</h1></Link>
 
                     <ul className="bg-slate-100 w-[100%] text-left absolute left-[-0.001%] hidden group-hover:flex">
                         <div>
