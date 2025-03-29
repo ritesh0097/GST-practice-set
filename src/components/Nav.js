@@ -11,10 +11,10 @@ const Nav = () => {
         <nav className="steal-blue">
             <ul className="w-[62%] lg:w-[85%] xl:w-[80%] lg:text-[10px] xl:text-[14px] 2xl:w-[70%] m-auto text-white lg:flex hidden z-10">
                 <NavLink to="/"><li className="px-6 py-3 cursor-pointer">Home</li></NavLink>
-                <li onClick={showNav2} className="px-6 py-3 cursor-pointer flex items-end">Services <span className="text-[12px] ml-1"><ion-icon name="caret-down-outline"></ion-icon></span></li>
+                <li onClick={showNav2} className="px-6 py-3 cursor-pointer flex items-end">Services</li>
                 <li className="px-6 py-3 cursor-pointer">GST Law</li>
-                <li className="px-6 py-3 cursor-pointer flex items-end">Downloads <span className="text-[12px] ml-1"><ion-icon name="caret-down-outline"></ion-icon></span></li>
-                <li className="px-6 py-3 cursor-pointer flex items-end">Search Taxpayer <span className="text-[12px] ml-1"><ion-icon name="caret-down-outline"></ion-icon></span></li>
+                <li className="px-6 py-3 cursor-pointer flex items-end">Downloads </li>
+                <li className="px-6 py-3 cursor-pointer flex items-end">Search Taxpayer </li>
                 <li className="px-6 py-3 cursor-pointer">Help and Taxpayer Facilities</li>
                 <li className="px-6 py-3 cursor-pointer">e-Invoice</li>
                 <li className="px-6 py-3 cursor-pointer">News and Updates</li>

@@ -44,10 +44,10 @@ const Footer = () => {
                 <div>
                     <h1 className="text-sky-500 font-bold hover:underline cursor-pointer">Follow Us</h1>                    
                     <ul className="w-[60px] 2xl:w-[100px] text-[10px] 2xl:text-[18px] flex justify-between">
-                        <li className="cursor-pointer"><ion-icon name="logo-facebook"></ion-icon></li>
-                        <li className="cursor-pointer"><ion-icon name="logo-youtube"></ion-icon></li>
-                        <li className="cursor-pointer"><ion-icon name="logo-twitter"></ion-icon></li>
-                        <li className="cursor-pointer"><ion-icon name="logo-linkedin"></ion-icon></li>
+                        <li className="cursor-pointer"></li>
+                        <li className="cursor-pointer"></li>
+                        <li className="cursor-pointer"></li>
+                        <li className="cursor-pointer"></li>
                     </ul>
                 </div>
             </div>

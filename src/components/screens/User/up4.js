@@ -29,7 +29,7 @@ const Up4 = () => {
                         <td className="p-4 border-2">GST REG-05</td>
                         <td className="p-4 border-2">Registration Certificate</td>
                         <td className="p-4 border-2"> 27/10/2018 </td>
-                        <td className="p-4 border-2 cursor-pointer hover:bg-slate-100"> <a href="GST REG-06 Certificate.pdf" download="GST REG-06 Certificate.pdf" className="text-2xl"><ion-icon name="arrow-down-outline"></ion-icon></a></td>
+                        <td className="p-4 border-2 cursor-pointer hover:bg-slate-100"> <a href="GST REG-06 Certificate.pdf" download="GST REG-06 Certificate.pdf" className="text-2xl"><img src="icons/download.png" alt="download button" width={"30"}/></a></td>
                     </tr>
                     <tr>
                         <td className="p-4 border-2">GSTR7A</td>

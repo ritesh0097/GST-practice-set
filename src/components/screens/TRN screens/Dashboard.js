@@ -42,7 +42,7 @@ const Dashboard = () => {
                             <div className="w-[20%] px-8 py-2 border border-black">Application for New Registration</div>
                             <div className="w-[16%] px-8 py-2 border border-black">{fday}/{fmonth}/{fyear}</div>
                             <div className="w-[16%] px-8 py-2 border border-black">Draft <span className="text-blue-600"><ion-icon name="alert-circle" class=""></ion-icon></span></div>
-                            <div className="w-[16%] px-8 py-2 border border-black"><span className="text-blue-800"><Link to={"/business details"}><ion-icon name="create" class="text-[30px]"></ion-icon></Link></span></div>
+                            <div className="w-[16%] px-8 py-2 border border-black"><Link to={"/business details"}><img src="icons/edit.png" alt="edit" className="w-[20px] h-[20px]"/></Link></div>
                         </div>
                 </div>
 
