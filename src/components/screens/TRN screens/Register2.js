@@ -25,7 +25,7 @@ const Register2 = () => {
             <Header/>        
 
             <div className="bg-white w-[98%] sm:w-[80%] md:w-[70%] lg:w-[60%] m-auto my-1 text flex flex-col items-start">
-            <p className="bg-slate-100 w-full p-2 text-left"> <span className="text-blue-600">Home</span> <ion-icon name="chevron-forward-outline"></ion-icon> Registration</p>
+            <p className="bg-slate-100 w-full p-2 text-left"> <span className="text-blue-600">Home</span> Registration</p>
 
             <form className="w-[90%] m-auto mb-[5%] py-4 flex flex-col text-left justify-start">
 

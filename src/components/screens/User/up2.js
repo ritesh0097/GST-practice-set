@@ -15,7 +15,7 @@ const Up2 = () => {
             <div className="w-full p-2 mb-[8%]">
 
                 <div className="header-text font-bold flex mb-3"> <h1 className=""> Ledger Balance |</h1><p>12/08/2020</p> </div>
-                <h1 className="">Download <span><ion-icon name="chevron-forward-circle-outline"></ion-icon></span></h1>
+                <h1 className="">Download </h1>
                 <hr/>
 
                 <table>
@@ -61,8 +61,8 @@ const Up2 = () => {
                 </table>
 
                 <div className="my-[6%] flex justify-center">
-                    <Link to={"/up8"}><button className="bg-blue-900 text-white head-text py-2 px-4 m-2"> FILE RETURNS <ion-icon name="chevron-forward-outline"></ion-icon> </button></Link>
-                    <button className="bg-blue-900 text-white head-text py-2 px-4 m-2"> PAY TAX <ion-icon name="chevron-forward-outline"></ion-icon> </button>
+                    <Link to={"/up8"}><button className="bg-blue-900 text-white head-text py-2 px-4 m-2"> FILE RETURNS  </button></Link>
+                    <button className="bg-blue-900 text-white head-text py-2 px-4 m-2"> PAY TAX  </button>
                 </div>
                 <hr/>
                 
@@ -76,7 +76,7 @@ const Up2 = () => {
                     
                     <hr/>
 
-                    <Link to={"#"}> <h1 className="text-blue-600">View Profile <span><ion-icon name="chevron-forward-circle-outline"></ion-icon></span></h1> </Link>
+                    <Link to={"#"}> <h1 className="text-blue-600">View Profile <span></span></h1> </Link>
 
 
                 </div>

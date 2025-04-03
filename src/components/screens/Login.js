@@ -28,7 +28,7 @@ const Login = () => {
             <Header/>
 
             <div className="bg-white w-[96%] sm:w-[80%] md:w-[70%] lg:w-[60%] xl:w-[55%] 2xl:w-[50%] m-auto my-1 text flex flex-col items-start">
-            <p className="bg-slate-100 w-full p-2 text-left"> <span className="text-blue-600">Home</span> <ion-icon name="chevron-forward-outline"></ion-icon> Login</p>
+            <p className="bg-slate-100 w-full p-2 text-left"> <span className="text-blue-600">Home</span> Login</p>
 
             <form className="w-[90%] m-auto mb-[5%] py-4 flex flex-col text-left justify-start">
 
@@ -50,7 +50,7 @@ const Login = () => {
                 </div>
 
                 <p className="my-4 mb-[8%]">
-                    <b><ion-icon name="alert-circle" class=""></ion-icon> First time Login:</b> If you are loggin in for the first time, click <Link to={"/register/new-registration"} className={"text-sky-800 underline"}>here</Link> to log in.
+                    <b> First time Login:</b> If you are loggin in for the first time, click <Link to={"/register/new-registration"} className={"text-sky-800 underline"}>here</Link> to log in.
                 </p>
             </form>
 

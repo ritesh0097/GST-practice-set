@@ -23,7 +23,7 @@ const Otp = () => {
         <div>
             <Header/>
                 <div className="bg-white w-[98%] sm:w-[80%] md:w-[70%] lg:w-[60%] m-auto my-1 text flex flex-col items-start">
-                <p className="bg-slate-100 w-full p-2 text-left"> <span className="text-blue-600">Home</span> <ion-icon name="chevron-forward-outline"></ion-icon>  <span className="text-blue-600"> Registration </span> <ion-icon name="chevron-forward-outline"></ion-icon> Verify</p>
+                <p className="bg-slate-100 w-full p-2 text-left"> <span className="text-blue-600">Home</span> <span className="text-blue-600"> Registration </span> Verify</p>
                     
                 <form className="w-[90%] m-auto mb-[5%] py-4 flex flex-col text-left justify-start">
 
@@ -46,13 +46,13 @@ const Otp = () => {
 
                     <label htmlFor="mobileOTP" className="header-text py-1 mt-2"> Mobile OTP <span className="text-red-600">*</span></label>
                     <input type="text" id="mobileOTP" value={mobotp} onChange={(e) => setMobotp(e.target.value)} placeholder="Enter Mobile OTP" className="my-1 p-2 border border-black"/>
-                    <p><ion-icon name="alert-circle" class=""></ion-icon> Enter OTP sent to your mobile number </p>
+                    <p> Enter OTP sent to your mobile number </p>
 
                     <label htmlFor="emailOTP" className="header-text py-1 mt-2"> Email OTP <span className="text-red-600">*</span></label>
                     <input type="text" id="emailOTP" value={emailotp} onChange={(e) => setEmailotp(e.target.value)} placeholder="Enter Email OTP" className="my-1 p-2 border border-black" />
-                    <p><ion-icon name="alert-circle" class=""></ion-icon> Enter OTP sent to your Email Address </p>
+                    <p> Enter OTP sent to your Email Address </p>
                     
-                    <p className="my-2 py-1"><ion-icon name="alert-circle" class=""></ion-icon> Please check the junk/span folder in case you do not get email. </p>
+                    <p className="my-2 py-1"> Please check the junk/span folder in case you do not get email. </p>
 
                     <p className="text-blue-600"> Need OTP to be recent? <span className="cursor-pointer hover:underline"> Click here </span></p>
 

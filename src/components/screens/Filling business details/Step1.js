@@ -14,54 +14,43 @@ const Step1 = () => {
             <StepHeader/> 
 
             <div className="flex my-4">
-                <div className="bg-white flex flex-col justify-center p-2 border border-black cursor-pointer hover:drop-shadow-xl">
-                    <span className="icon-text"></span>
+                <div className="bg-white flex flex-col justify-center p-2 border border-black cursor-pointer hover:drop-shadow-xl">                    
                     Business Details
                 </div>
 
-                <div className="flex flex-col justify-center p-2 border border-black cursor-pointer hover:drop-shadow-xl">
-                    <span className="icon-text"></span>
+                <div className="flex flex-col justify-center p-2 border border-black cursor-pointer hover:drop-shadow-xl">                    
                     Promoters / Partners
                 </div>
 
-                <div className="flex flex-col justify-center p-2 border border-black cursor-pointer hover:drop-shadow-xl">
-                    <span className="icon-text"></span>
+                <div className="flex flex-col justify-center p-2 border border-black cursor-pointer hover:drop-shadow-xl">                    
                     Authorized Signatory
                 </div>
 
-                <div className="flex flex-col justify-center p-2 border border-black cursor-pointer hover:drop-shadow-xl">
-                    <span className="icon-text"></span>
+                <div className="flex flex-col justify-center p-2 border border-black cursor-pointer hover:drop-shadow-xl">                    
                     Authorized Representative
                 </div>
 
-                <div className="flex flex-col justify-center p-2 border border-black cursor-pointer hover:drop-shadow-xl">
-                    <span className="icon-text"></span>
+                <div className="flex flex-col justify-center p-2 border border-black cursor-pointer hover:drop-shadow-xl">                    
                     Principal Place of Business
                 </div>
 
-                <div className="flex flex-col justify-center p-2 border border-black cursor-pointer hover:drop-shadow-xl">
-                    <span><span className="icon-text"></span>
-                    <span className=""></span></span>
+                <div className="flex flex-col justify-center p-2 border border-black cursor-pointer hover:drop-shadow-xl">                    
                     Additional Place of Business
                 </div>
 
-                <div className="flex flex-col justify-center p-2 border border-black cursor-pointer hover:drop-shadow-xl">
-                    <span className="icon-text"></span>
+                <div className="flex flex-col justify-center p-2 border border-black cursor-pointer hover:drop-shadow-xl">                    
                     Goods and Servcies
                 </div>
 
-                <div className="flex flex-col justify-center p-2 border border-black cursor-pointer hover:drop-shadow-xl">
-                    <span className="icon-text"></span>
+                <div className="flex flex-col justify-center p-2 border border-black cursor-pointer hover:drop-shadow-xl">                    
                     State Specific Information
                 </div>
 
-                <div className="flex flex-col justify-center p-2 border border-black cursor-pointer hover:drop-shadow-xl">
-                    <span className="icon-text"></span>
+                <div className="flex flex-col justify-center p-2 border border-black cursor-pointer hover:drop-shadow-xl">                    
                     Aadhaar Authentication
                 </div>
 
-                <div className="flex flex-col justify-center p-2 border border-black cursor-pointer hover:drop-shadow-xl">
-                    <span className="icon-text"></span>
+                <div className="flex flex-col justify-center p-2 border border-black cursor-pointer hover:drop-shadow-xl">                    
                     Verification
                 </div>
             </div>

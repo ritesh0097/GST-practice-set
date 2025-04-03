@@ -26,13 +26,13 @@ const Up1 = () => {
                 </div>
 
                 <div>
-                    <Link to={"/up2"}><button className="bg-blue-900 text-white head-text py-2 px-4 m-2"> RETURN DASHBOARD <ion-icon name="chevron-forward-outline"></ion-icon> </button></Link>
-                    <button className="bg-blue-900 text-white head-text py-2 px-4 m-2"> CREATE CHALLAN <ion-icon name="chevron-forward-outline"></ion-icon> </button>
-                    <button className="bg-blue-900 text-white head-text py-2 px-4 m-2"> VIEW NOTES(S) AND ORDER(S) <ion-icon name="chevron-forward-outline"></ion-icon> </button>
-                    <button className="bg-blue-900 text-white head-text py-2 px-4 m-2"> ANNUAL RETURN <ion-icon name="chevron-forward-outline"></ion-icon> </button>
+                    <Link to={"/up2"}><button className="bg-blue-900 text-white head-text py-2 px-4 m-2"> RETURN DASHBOARD  </button></Link>
+                    <button className="bg-blue-900 text-white head-text py-2 px-4 m-2"> CREATE CHALLAN </button>
+                    <button className="bg-blue-900 text-white head-text py-2 px-4 m-2"> VIEW NOTES(S) AND ORDER(S) </button>
+                    <button className="bg-blue-900 text-white head-text py-2 px-4 m-2"> ANNUAL RETURN </button>
                 </div>
 
-                <div className="flex justify-end items-center"> <b> Else Go to <ion-icon name="chevron-forward-outline"></ion-icon><ion-icon name="chevron-forward-outline"></ion-icon> </b> <Link to={"/up2"}><button className="bg-blue-900 text-white head-text py-2 px-4 m-2"> CONTINUE TO DASHBOARD <ion-icon name="chevron-forward-outline"></ion-icon> </button></Link></div>
+                <div className="flex justify-end items-center"> <b> Else Go to {">>"} </b> <Link to={"/up2"}><button className="bg-blue-900 text-white head-text py-2 px-4 m-2"> CONTINUE TO DASHBOARD </button></Link></div>
 
             </div>
 
@@ -44,7 +44,7 @@ const Up1 = () => {
                     
                     <hr/>
 
-                    <Link to={"#"}> <h1 className="text-blue-600">View Profile <span><ion-icon name="chevron-forward-circle-outline"></ion-icon></span></h1> </Link>
+                    <Link to={"#"}> <h1 className="text-blue-600">View Profile </h1> </Link>
 
 
                 </div>

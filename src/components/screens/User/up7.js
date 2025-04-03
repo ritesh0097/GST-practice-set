@@ -147,8 +147,8 @@ const Up7 = () => {
 
                     <div className="flex">
                         <div className="p-2 mr-12">
-                            <button className="bg-gray-200 w-[200px] px-4 py-3 border border-gray-400 flex items-center hover:bg-gray-300 cursor-pointer"><ion-icon name="card-outline"></ion-icon> <span className="ml-2">Preferred Banks</span></button>
-                            <button onClick={banktoggle} className="bg-gray-200 w-[200px] px-4 py-3 border border-gray-400 flex items-center hover:bg-gray-300 cursor-pointer"><ion-icon name="card-outline"></ion-icon> <span className="ml-2">Net Banking</span></button>                        
+                            <button className="bg-gray-200 w-[200px] px-4 py-3 border border-gray-400 flex items-center hover:bg-gray-300 cursor-pointer"> <span className="ml-2">Preferred Banks</span></button>
+                            <button onClick={banktoggle} className="bg-gray-200 w-[200px] px-4 py-3 border border-gray-400 flex items-center hover:bg-gray-300 cursor-pointer"> <span className="ml-2">Net Banking</span></button>
                         </div>
 
                         <div id="netbanking" className="text-left p-4 hidden">

@@ -10,8 +10,7 @@ const Home = () => {
         <div className="text">
             <nav>
                 <img src="banner_image_large.jpg" alt="" className="h-[100px] sm:h-auto"/>
-                <div className="bg-yellow-200 text-red-600 font-bold flex items-center p-1">
-                    <div className="absolute left-2"><ion-icon name="notifications"></ion-icon></div>
+                <div className="bg-yellow-200 text-red-600 font-bold flex items-center p-1">                    
                     
                     <div className="marquee-container">
                         <div className="marquee-text">
@@ -61,28 +60,22 @@ const Home = () => {
                             <h1 className="header-text font-bold mb-2 text-left"> Popular Help Topics </h1>
                             <div className="text-left border border-blue-200 cursor-pointer rounded-lg shadow-md">
                                 <div className="p-2 flex justify-between hover:underline hover:bg-blue-200">
-                                    <p>How do I register width GST?</p>
-                                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                                    <p>How do I register width GST?</p>                                    
                                 </div><hr/>
                                 <div className="p-2 flex justify-between hover:underline hover:bg-blue-200">
-                                    <p>How do I apply for refund?</p>
-                                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                                    <p>How do I apply for refund?</p>                                    
                                 </div><hr/>
                                 <div className="p-2 flex justify-between hover:underline hover:bg-blue-200">
                                     <p>How do I file returns?</p>
-                                    <ion-icon name="chevron-forward-outline"></ion-icon>
                                 </div><hr/>
                                 <div className="p-2 flex justify-between hover:underline hover:bg-blue-200">
-                                    <p>How can I use Returns offline Tool?</p>
-                                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                                    <p>How can I use Returns offline Tool?</p>                                    
                                 </div><hr/>
                                 <div className="p-2 flex justify-between hover:underline hover:bg-blue-200">
-                                    <p>How do I file an appeal?</p>
-                                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                                    <p>How do I file an appeal?</p>                                    
                                 </div><hr/>
                                 <div className="p-2 flex justify-between hover:underline hover:bg-blue-200">
-                                    <p>How do I file intimation about voluntary payment?</p>
-                                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                                    <p>How do I file intimation about voluntary payment?</p>                                    
                                 </div>
                             </div>
 
@@ -94,7 +87,7 @@ const Home = () => {
                                 <div className="border border-gray-400 "></div>
                                 <div>
                                     <h1>Log/Track Your Issues here</h1>
-                                    <span className="text-blue-700 font-bold cursor-pointer hover:underline">Grievance Redressal <ion-icon name="open"></ion-icon></span>
+                                    <span className="text-blue-700 font-bold cursor-pointer hover:underline">Grievance Redressal</span>
                                 </div>
                             </div>
                         </div>
@@ -105,7 +98,7 @@ const Home = () => {
                         <div className="w-[94%] lg:w-[55%] m-auto mt-4">
                             <div className="mb-2 flex justify-between">
                                 <h1 className="header-text font-bold">Upcoming Due Dates</h1>
-                                <span className="header-text">DOWNLOAD PDF <ion-icon name="open"></ion-icon></span>
+                                <span className="header-text">DOWNLOAD PDF </span>
                             </div>
 
                             <table className="text-left">
@@ -119,11 +112,11 @@ const Home = () => {
                                 <tr>
                                     <td className="w-[25%] pl-2 border border-black">
                                         <h1>GSTR-3B (Nov, 2024)</h1>
-                                        <p className="font-bold">Dec 20th, 2024 <ion-icon name="information-circle"></ion-icon></p>
+                                        <p className="font-bold">Dec 20th, 2024 </p>
                                     </td>
                                     <td className="w-[25%] pl-2 border border-black">
                                         <h1>GSTR-3B (Oct-Dec, 2024)</h1>
-                                        <p className="font-bold">Jan 22nd, 24th, 2025 <ion-icon name="information-circle"></ion-icon></p>
+                                        <p className="font-bold">Jan 22nd, 24th, 2025 </p>
                                     </td>
                                     <td className="w-[25%] pl-2 border border-black">
                                         <h1>GSTR-5 (Nov, 2024)</h1>
@@ -138,11 +131,11 @@ const Home = () => {
                                 <tr>
                                     <td className="pl-2 border border-black">
                                         <h1>GSTR-1 (Nov, 2024)</h1>
-                                        <p className="font-bold">Dec 11th, 2024 <ion-icon name="information-circle"></ion-icon></p>
+                                        <p className="font-bold">Dec 11th, 2024 </p>
                                     </td>
                                     <td className="pl-2 border border-black">
                                         <h1>GSTR-1 (Oct-Dec, 2024)</h1>
-                                        <p className="font-bold">Jan 13th, 2025 <ion-icon name="information-circle"></ion-icon></p>
+                                        <p className="font-bold">Jan 13th, 2025 </p>
                                     </td>
                                     <td className="pl-2 border border-black">
                                         <h1>GSTR-5 (Nov, 2024)</h1>
@@ -157,7 +150,7 @@ const Home = () => {
                                 <tr>
                                     <td className="pl-2 border border-black">
                                         <h1>IFF (Optional Nov, 2024)</h1>
-                                        <p className="font-bold">Dec 13th, 2024 <ion-icon name="information-circle"></ion-icon> </p>
+                                        <p className="font-bold">Dec 13th, 2024 </p>
                                     </td>
                                     <td className="pl-2 border border-black">
                                         <h1>CMP-08 (Oct-Dec, 2024)</h1>
@@ -179,7 +172,7 @@ const Home = () => {
                         <div className="w-[94%] lg:w-[40%] m-auto mt-4">
                             <div className="mb-2 flex justify-between">
                                 <h1 className="header-text font-bold">GST Media</h1>
-                                <span className="header-text">View All <ion-icon name="open"></ion-icon></span>
+                                <span className="header-text">View All </span>
                             </div>
 
                             <div className="p-2 border border-blue-200 shadow-md rounded-lg">

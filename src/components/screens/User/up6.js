@@ -85,9 +85,9 @@ const Up6 = () => {
                     <h1 className="header-text text-left">Payment Modes <span className="text-red-600 w-[300px]">*</span></h1>
 
                     <div className="p-2">
-                        <button className="bg-gray-200 w-[200px] px-4 py-3 border border-gray-400 flex items-center hover:bg-gray-300 cursor-pointer"><ion-icon name="card-outline"></ion-icon> <span className="ml-2">E-Payment</span></button>
-                        <button className="bg-gray-200 w-[200px] px-4 py-3 border border-gray-400 flex items-center hover:bg-gray-300 cursor-pointer"><ion-icon name="cash-outline"></ion-icon> <span className="ml-2">Over The Counter</span></button>
-                        <button className="bg-gray-200 w-[200px] px-4 py-3 border border-gray-400 flex items-center hover:bg-gray-300 cursor-pointer"><ion-icon name="earth"></ion-icon> <span className="ml-2">NEFT/RTGS</span></button>
+                        <button className="bg-gray-200 w-[200px] px-4 py-3 border border-gray-400 flex items-center hover:bg-gray-300 cursor-pointer"><span className="ml-2">E-Payment</span></button>
+                        <button className="bg-gray-200 w-[200px] px-4 py-3 border border-gray-400 flex items-center hover:bg-gray-300 cursor-pointer"><span className="ml-2">Over The Counter</span></button>
+                        <button className="bg-gray-200 w-[200px] px-4 py-3 border border-gray-400 flex items-center hover:bg-gray-300 cursor-pointer"><span className="ml-2">NEFT/RTGS</span></button>
                     </div>
                     
                 </div>
